@@ -1,10 +1,11 @@
 import logging
-from config import dp
+from config import dp, db
 from aiogram import executor
 
 
 async def on_startup(dp):
     logging.basicConfig(level=logging.INFO)
+    db.create_tables()
 
 
 if __name__ == '__main__':
