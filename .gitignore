@@ -1,0 +1,8 @@
+local_config.py
+/venv
+**/logs
+__pycache__/
+.idea
+*.pyc
+*.log
+.DS_Store
