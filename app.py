@@ -1,6 +1,7 @@
 import logging
 from config import dp, db
 from aiogram import executor
+import hendlers
 
 
 async def on_startup(dp):
@@ -9,4 +10,4 @@ async def on_startup(dp):
 
 
 if __name__ == '__main__':
-    executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
+    executor.start_polling(dp, skip_updates=False, on_startup=on_startup)
